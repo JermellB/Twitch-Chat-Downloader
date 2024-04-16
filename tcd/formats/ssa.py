@@ -86,7 +86,7 @@ class SSA(Format):
                 letter: str = self.format_dictionary['comments']['format'][index]
 
                 # Check if SSA bracket first, before altering the counter.
-                if letter is '}' and open_bracket_counter is 0:
+                if letter == '}' and open_bracket_counter == 0:
                     ssa_closing_brackets_indices.append(index)
                     continue
 
